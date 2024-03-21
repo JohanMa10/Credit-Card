@@ -1,0 +1,198 @@
+:root {
+    font-family: "Rethink Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+.preview {
+    height: 100vh;
+    flex: 1;
+}
+
+.background {
+    background: linear-gradient(140deg, #693EF8 0%, #BF4ECB 37.73%, #ED706C 56.43%, #6091E0 71.96%, #630090 100%);
+    filter: brightness(50%);
+    height: 100%;
+    width: 400px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.info_card {
+    height: 100vh;
+    flex: 1;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.info_card_form {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px rgba(128, 128, 128, 0.308) solid;
+}
+
+.info_last {
+    width: 100%;
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+}
+
+.info_groupinputs {
+    display: flex;
+    gap: 8px;
+}
+
+.info_card_exp_date_month {
+    width: 100%;
+}
+
+.info_card_exp_date_year {
+    width: 100%;
+}
+
+.info_card_submit {
+    background-color: rgb(20, 0, 43);
+    color: #ffffff;
+    padding: 12px;
+    transition: all 300ms;
+}
+
+.info_card_submit:hover {
+    background-color: rgb(72, 0, 155);
+    cursor: pointer;
+}
+
+.preview_card_front {
+    width: 372px;
+    height: 230px;
+    border-radius: 16px;
+    background: linear-gradient(114deg, #693EF8 0%, #BF4ECB 37.73%, #ED706C 56.43%, #6091E0 71.96%, #630090 100%);
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 1;
+}
+
+.number_card {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    color: white;
+    font-size: 28px;
+    letter-spacing: 3px;
+}
+
+.cardholder_name {
+    position: absolute;
+    bottom: 12px;
+    left: 24px;
+    color: white;
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.exp_date {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    bottom: 12px;
+    right: 24px;
+    color: white;
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    gap: 2px;
+}
+
+.logo_card_front {
+    position: absolute;
+    top: 28px;
+    left: 24px;
+}
+
+.preview_card_back {
+    width: 372px;
+    height: 230px;
+    border-radius: 16px;
+    background: #eaeaef;
+    overflow: hidden;
+    position: relative;
+    grid-column-start: 3;
+    grid-column-end: 13;
+    grid-row-start: 2;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.preview_cards {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+    z-index: 1;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.preview_cards_grid {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 28px;
+}
+
+.preview_card_back_band {
+    margin-top: 12px;
+    width: 100%;
+    height: 48px;
+    background-color: #28292a;
+}
+
+.cvc {
+    display: inline;
+    width: 70%;
+    background-color: #b9c2cb;
+    border-radius: 5px;
+    padding: 8px 16px;
+    text-align: right;
+    font-size: 13px;
+    color: #ffffff;
+}
+
+.preview_card_back_data {
+    margin-bottom: 44px;
+}
+
+.card_number_error {
+    display: none;
+}
